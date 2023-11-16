@@ -2,59 +2,168 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermarché XYZ</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Inclure Slick Slider CSS et JS -->
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/style_Responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.svg" />
+
+     <!-- Inclure jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script type="text/javascript" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+     <script src="/Js/script.js"></script>
+     
+    <title>Supermarché LOVE</title>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <h1>Supermarché XYZ</h1>
-        <p>Votre destination pour des produits frais et de qualité</p>
-    </header>
+    
 
     <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#produits">Produits</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <a href="#" class="logo">ARON</a>
 
-    <!-- Section Accueil -->
-    <section id="accueil">
-        <h2>Bienvenue chez Supermarché XYZ</h2>
-        <p>Découvrez notre sélection exceptionnelle de produits frais et de qualité.</p>
-        <!-- Ajoutez des images ou des sliders ici pour présenter le magasin -->
-    </section>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
 
-    <!-- Section Produits -->
-    <section id="produits">
-        <h2>Nos Produits</h2>
-        <!-- Liste de produits avec des images, descriptions, etc. -->
-    </section>
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Rechercher">
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
 
-    <!-- Section Services -->
-    <section id="services">
-        <h2>Nos Services</h2>
-        <!-- Informations sur la qualité des prestations, service après-vente, etc. -->
-    </section>
+        <img src="/image/menu-btn.png" alt="menu" class="menu-hamburger">
+    </div>
 
-    <!-- Section Contact -->
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <!-- Formulaire de contact ou informations de contact -->
-    </section>
+    <div class="form">
+        <p class="LH">Login Here : </p>
+        <input name="email" placeholder="Email or phone number">
+        <input name="" placeholder="Password ">
+        <a href="#"><button class="login">Log In</button></a>
+        
+        <p class="FP"><a href="#">Forgot Password?</a></p><hr class="Hr">
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Supermarché XYZ. Tous droits réservés.</p>
-    </footer>
+        <a href="#"><button class="create">Create new account</button></a>
+        <p class="liw">Log in with</p>
+        <div class="icon">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a> 
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a> 
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a> 
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a> 
+            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+        </div>
+            
+        <p class="copyright">© 2023. All Rights Reserved</p>
+    </div>
 
-    <!-- Scripts -->
-    <script src="app.js"></script>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="/image/image1.png" alt="Image 1">
+            <p class="original-price">$50</p>
+            <p class="sale-price">$40 (20% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image2.png" alt="Image 2">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image3.png" alt="Image 3">
+            <h3><b>AirPods Pro</b></h3>
+            <h4 class="original3">2ᵉ génération <br>(USB‑C)</h4>
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image4.png" alt="Image 4">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image5.png" alt="Image 5">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image6.png" alt="Image 6">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image7.png" alt="Image 7">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image8.png" alt="Image 8">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image9.png" alt="Image 9">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image10.png" alt="Image 10">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image11.png" alt="Image 11">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image12.png" alt="Image 12">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        <div class="slide fade">
+            <img src="/image/image13.png" alt="Image 13">
+            <p class="original-price">$30</p>
+            <p class="sale-price">$25 (16% off)</p>
+        </div>
+        
+
+        <div sclass="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+    </div>
+
+    <header></header>
+
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger") 
+    const navLinks = document.querySelector(".nav-links") 
+
+    menuHamburger.addEventListener('click',()=>{
+       navLinks.classList.toggle('mobile-menu')
+       })
+</script>
+
 </html>
