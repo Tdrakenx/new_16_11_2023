@@ -1,0 +1,1 @@
+We are creating a static website for a medium-sized supermarket. The location, the products, the specialization of the store, the quality of the services, after-sales, management of the fresh produce section, etc. Our imagination, our taste in designing and creating a website will be noted.
