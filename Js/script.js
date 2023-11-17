@@ -13,7 +13,7 @@ $(document).ready(function(){
         
         slideIndex++;
         
-        if (slideIndex > slides.length) {
+        if (slideIndex == slides.length) {
             slideIndex = 1;
         }
         

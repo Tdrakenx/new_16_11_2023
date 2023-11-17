@@ -1,8 +1,8 @@
 @media screen and (max-width: 900px) {
-    header {
+    body {
         height: 100vh;
         width: 100vw;
-        background-image: url(/image/landscape.jpg);
+        background-image: url('../image/landscape.jpg');
         background-size: cover;
         background-position: center; 
     }
@@ -49,6 +49,22 @@
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;
+    }
+
+    .srch {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .slideshow-container{
+        display: none;
+    }
+
+    .form {
+        display: block;
     }
 
 }

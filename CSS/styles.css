@@ -7,13 +7,10 @@
 
 body {
     font-family: 'Poppins';
-}
-
-header {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(/image/landscape.jpg);
+    background-image: url('../image/landscape.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    display: flex;
 }
 
 .navbar {
@@ -121,7 +118,7 @@ header {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
     position: absolute;
     top: -20px;
-    left: 870px;
+    right:  155px;
     margin-top: 250px;
     margin-left: 200px;
     border-radius: 10px;
@@ -296,6 +293,29 @@ header {
     transform: translate(-50%, -50%);
 }
 
+img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.original-price {
+    color: #888;
+    text-decoration: line-through;
+  }
+
+  .sale-price {
+    color: red;
+    font-weight: bold;
+  }
+
+.dots  {
+    position: absolute;
+    bottom: 0;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 .dot {
     height: 10px;
     width: 10px;
@@ -312,33 +332,14 @@ header {
     background-color: #717171; 
 }
 
-img {
-    border-radius: 10px;
-    width: 100%;
-}
-
-  .original-price {
-    color: #888;
-    text-decoration: line-through;
-  }
-
-  .sale-price {
-    color: red;
-    font-weight: bold;
-  }
-
-  .original3 {
-    color: #888;
-  }
-
-  .dots  {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .dot:hover {
+.dot:hover {
     background-color: #717171;
     cursor: pointer;
   }  
+
+  
+
+
+ 
+
+  
